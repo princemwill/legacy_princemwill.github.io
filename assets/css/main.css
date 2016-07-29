@@ -2459,7 +2459,8 @@
 			position: absolute;
 			left: 0;
 			top: 0;
-			background-image: url("images/overlay.png");
+            /*Removing to get rid of haze over main banner photo. Hopefully doesnt effect anything else*/
+			/*background-image: url("images/overlay.png");*/
 			width: 100%;
 			height: 100%;
 			z-index: 1;
