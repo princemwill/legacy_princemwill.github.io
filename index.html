@@ -11,15 +11,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
     <!-- CSS Shake annimations -->
     <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
 
+    <!-- Floating "to top" button script -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
 </head>
-<body class="landing">
+
+<body class="landing">      
+
     <div id="page-wrapper">
+
+        <!-- floating "to top" button html script-->
+        <a href="javascript:" id="return-to-top">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </a>
 
         <!-- Header -->
         <header id="header">
@@ -241,6 +252,24 @@
     <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
+
+    <!-- Script for floating "to top" button -->
+    <script type="text/javascript">
+		// ===== Scroll to Top ====
+		$(window).scroll(function () {
+			if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+				$('#return-to-top').fadeIn(200);    // Fade in the arrow
+			} else {
+				$('#return-to-top').fadeOut(200);   // Else fade out the arrow
+			}
+		});
+		$('#return-to-top').click(function () {      // When arrow is clicked
+			$('body,html').animate({
+				scrollTop: 0                       // Scroll to top of body
+			}, 500);
+		});
+    </script>
+
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
