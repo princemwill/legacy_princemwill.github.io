@@ -2834,8 +2834,9 @@ input[type="button"],
         top: 50%;
         width: 2em;
         z-index: 1;
+        color: #8e44ad;
     }
-
+     
 /* Spotlight */
 
 .spotlight {
