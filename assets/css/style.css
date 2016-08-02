@@ -39,3 +39,12 @@
     color: #fff;
     top: 5px;
 }
+
+/*attempt to change outline color-profile glow from blue stop one that matches site theme*/
+#submitEmail{
+    border-color: #b588e2
+    
+}
+#submitEmail:active{
+    border-color: #b588e2
+}

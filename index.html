@@ -212,11 +212,21 @@
                     <h2>Follow my work</h2>
                     <p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
                 </header>
-                <form method="post" action="#" class="container 50%">
-                    <div class="row uniform 50%">
-                        <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-                        <div class="4u$ 12u$(xsmall)"><input type="submit" value="Get Started" class="fit special" /></div>
-                    </div>
+                <!-- attempting functioning mail list-->
+                <!-- Online source code for form -->
+                <!--<form action="http://formspree.io/princemwilliams@gmail.com">
+                    <input type="email" name="_replyto" placeholder="Your Email">
+                    <textarea name="body" placeholder="Name"></textarea>
+                    <input type="submit" value="Send">
+                </form>-->
+
+                <!-- Hybrid script from above code and original template code-->
+                <form method="post" action="http://formspree.io/princemwilliams@gmail.com" class="container 50%">
+                    <div class="row uniform 50%">                        
+                        <div class="6u 12u$(xsmall)"><input type="text" name="Name" id="name" value="" placeholder="Your Name"></div>
+                            <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
+                            <div class="4u$ 12u$(xsmall)" id="submitEmail"><input type="submit" value="Submit" class="fit special" /></div>
+                        </div>                    
                 </form>
             </div>
         </section>
@@ -232,7 +242,7 @@
                 <li><a href="mailto:princemwilliams@gmail.com?Subject=Hello%20again" target="_top" class="icon alt fa-envelope shake-slow"><span class="label">Email</span></a></li>
             </ul>
             <ul class="copyright">
-                <li>&copy; Untitled. All rights reserved.</li>
+                <li>&copy; Prince Williams. All rights reserved.</li>
                 <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
             </ul>
         </footer>
